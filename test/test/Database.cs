@@ -5,7 +5,6 @@ using System.Web;
 using System.Data;
 using System.Data.SqlClient;
 using System.ComponentModel.DataAnnotations;
-using System.Data.Entity;
 using System.Configuration;
 using test.Models;
 
