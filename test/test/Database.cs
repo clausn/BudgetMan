@@ -23,11 +23,15 @@ namespace test
 
             try
             {
-             
+                
+                    connection = new SqlConnection(ConfigurationManager.ConnectionStrings["BudgetManager"].ConnectionString);
+                    connection.Open();
+                
+                
                 DataTable dt = new DataTable();
                 SqlCommand command = new SqlCommand("SELECT Category.[Name], Transactions.[Value], Transactions.[Date], Transactions.[Text]" + 
                    " FROM Category INNER JOIN Transactions ON  Category.ID = Transactions.FK_CatID", connection);
-                connection.Open();
+                
                 dt.Load(command.ExecuteReader());
 
                 foreach (DataRow row in dt.Rows)
@@ -35,10 +39,9 @@ namespace test
                    
                     trans.CatName = Convert.ToString(row["Name"]);
                     trans.TransValue = float.Parse(row["Value"].ToString());
-                    trans.TransDateTime = Convert.ToDateTime("Date");
+                    trans.TransDateTime = Convert.ToDateTime(row["Date"]);
                     trans.TransText = Convert.ToString(row["Text"]);
                 }
-
 
             }
             catch (Exception)
@@ -47,6 +50,8 @@ namespace test
                 throw;
             }
             return trans;
+
+            connection.Close();
         }
     }
 }
