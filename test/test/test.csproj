@@ -156,6 +156,7 @@
     </Content>
     <None Include="Properties\PublishProfiles\test20170830085755.pubxml" />
     <Content Include="Service References\Application Insights\ConnectedService.json" />
+    <Content Include="Views\Default\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -165,7 +166,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Default\" />
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
