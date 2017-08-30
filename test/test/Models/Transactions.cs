@@ -5,7 +5,7 @@ using System.Web;
 
 namespace test.Models
 {
-    public class Info
+    public class Transactions
     {
         public int TransID { get; set; }
         public float TransValue { get; set; }
