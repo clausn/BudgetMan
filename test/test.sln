@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 14
-VisualStudioVersion = 14.0.25420.1
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "test", "test\test.csproj", "{96AA8B80-8BF3-4689-9636-3A9A17B00FC2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BudgetManager", "..\..\BudgetManager\BudgetManager\BudgetManager.csproj", "{20955FE9-A5B8-4B8C-BB32-39C61C9A1DCF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{96AA8B80-8BF3-4689-9636-3A9A17B00FC2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{96AA8B80-8BF3-4689-9636-3A9A17B00FC2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{96AA8B80-8BF3-4689-9636-3A9A17B00FC2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{96AA8B80-8BF3-4689-9636-3A9A17B00FC2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{20955FE9-A5B8-4B8C-BB32-39C61C9A1DCF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{20955FE9-A5B8-4B8C-BB32-39C61C9A1DCF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{20955FE9-A5B8-4B8C-BB32-39C61C9A1DCF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{20955FE9-A5B8-4B8C-BB32-39C61C9A1DCF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB06AB7D-7496-4798-B3D8-4B2F4DEE5493}
 	EndGlobalSection
 EndGlobal
