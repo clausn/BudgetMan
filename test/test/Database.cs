@@ -45,9 +45,10 @@ namespace test
 
                 throw;
             }
+            connection.Close();
             return trans;
 
-            connection.Close();
+           
         }
     }
 }

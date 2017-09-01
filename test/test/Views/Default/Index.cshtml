@@ -1,5 +1,26 @@
-﻿
-@{
+﻿@model test.Models.GuestResponse
+
+<h2>rsvpForm</h2>
+
+@using (Html.BeginForm())
+
+{
+    @Html.ValidationSummary()
+    <p>Name: @Html.TextAreaFor(x => x.Name)</p> //x peger på vore model. kunne også kaldes m, eller noget andet
+                                                <p>Email: @Html.TextAreaFor(x => x.Email)</p>
+                                                <p>Phne: @Html.TextAreaFor(x => x.Phone)</p>
+                                                <p>
+                                                    Will Attend: @Html.DropDownListFor(x => x.WillAttend, new[]
+    {
+                   new SelectListItem() {Text = "yes", Value = bool.TrueString },
+                   new SelectListItem() {Text = "no", Value = bool.FalseString }
+    })
+                                                </p>
+                                                <input type="submit" name="name" value="Indsend" />
+}
+
+
+@*@{
     Layout = null;
 }
 
@@ -12,7 +33,7 @@
 </head>
 <body>
 <div>
-    Hello World
+   <p>helleo worelllld</p> 
 </div>
 </body>
-</html>
+</html>*@
